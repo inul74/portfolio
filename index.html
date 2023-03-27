@@ -1,194 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Portfolio : Zainul Musthofa</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-
-    <!-- My CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/skins/color-1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <!-- style-switcher -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled />
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled />
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled />
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled />
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled />
+    <link rel="stylesheet" href="css/style-switcher.css" />
   </head>
-  <body id="home">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-success-subtle shadow-sm fixed-top">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Z.M</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#profil">Profil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#lemari">Lemari</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#kontak">Kontak</a>
-            </li>
-          </ul>
+  <body>
+    <!-- Main container start -->
+    <div class="main-container">
+      <!-- Aside start -->
+      <div class="aside">
+        <div class="logo">
+          <a href="#"><span>R</span>umah</a>
         </div>
+        <div class="nav-toggler">
+          <span></span>
+        </div>
+        <ul class="nav">
+          <li>
+            <a href="#home" class="active"><i class="fa fa-home"></i>Beranda</a>
+          </li>
+          <li>
+            <a href="#about"><i class="fa fa-user"></i>Profil</a>
+          </li>
+          <li>
+            <a href="#services"><i class="fa fa-list"></i>Layanan</a>
+          </li>
+          <li>
+            <a href="#portfolio"><i class="fa fa-briefcase"></i>Bagasi</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fa fa-comments"></i>Kontak</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Akhir Navbar -->
-
-    <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-      <img src="img/1.jpg" alt="inul74" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-5">Zainul Musthofa</h1>
-      <p class="lead fw-normal">Pranata Komputer Terampil</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,224L48,224C96,224,192,224,288,208C384,192,480,160,576,160C672,160,768,192,864,186.7C960,181,1056,139,1152,122.7C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Jumbotron -->
-
-    <!-- Profil -->
-    <section id="profil">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Profil Saya</h2>
+      <!-- Aside end -->
+      <!-- Main content start -->
+      <div class="main-content">
+        <!-- Home section start -->
+        <section class="home active section" id="home">
+          <div class="container">
+            <div class="row">
+              <div class="home-info padd-15">
+                <h3 class="hello">Nama lengkap saya <span class="name">Zainul Musthofa, A.Md.</span></h3>
+                <h3 class="my-profession">Keahlian <span class="typing">Pranata Komputer Terampil</span></h3>
+                <p>Berpengalaman lebih dari 20 Tahun dalam bidang Sistem Operasi Komputer, Sistem Informasi Jaringan Komputer, Jasa Administrasi Perkantoran, Jasa Pelaporan Pajak Badan Usaha, dan lain-lain...</p>
+                <a href="#" class="btn">Unduh CV</a>
+              </div>
+              <div class="home-img padd-15">
+                <img src="images/01.jpg" alt="" />
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row justify-content-evenly fs-5 text-center">
-          <div class="col-md-4">
-            <p>Pranata Komputer Tingkat Terampil adalah Pranata Komputer dengan kualifikasi teknis atau penunjang profesional yang pelaksanaan tugas dan fungsinya mensyaratkan penguasaan pengetahuan teknis di bidang komputer</p>
+        </section>
+        <!-- Home section end -->
+        <!-- Profil section start -->
+        <section class="about section" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Profil</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="about-content padd-15">
+                <div class="row">
+                  <div class="about-text padd-15">
+                    <h3>Halo, perkenalkan nama saya Zainul Musthofa | Keahlian <span>Pranata Komputer Terampil</span></h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, facere rerum eveniet atque, soluta officia in reprehenderit accusantium optio nemo dolore, impedit quaerat accusamus voluptatibus! Mollitia perferendis
+                      laborum assumenda quisquam ab modi explicabo officiis et suscipit sint perspiciatis fuga soluta quod a eveniet eaque, voluptate ullam nisi. Eaque consectetur vel quis minus eius ratione.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="personal-info padd-15">
+                    <div class="row">
+                      <div class="info-item padd-15">
+                        <p>Tanggal Lahir : <span>12 Februari 1974</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Gelar : <span>D.3 Teknik Komputer</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Email : <span>zmusthofa74@gmail.com</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Kegiatan : <span>Freelance</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Website : <span>www.belumpunya.com</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Kota : <span>Palembang</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Telp./Hp. : <span>(+62) 12021974</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Provinsi : <span>Sumatera Selatan</span></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="buttons padd-15">
+                        <a href="#contact" data-section-index="1" class="btn hire-me">Hubungi</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skills padd-15">
+                    <div class="row">
+                      <div class="skill-item padd-15">
+                        <h5>Administrasi Perkantoran</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 86%"></div>
+                          <div class="skill-percent">86%</div>
+                        </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>Sistem Informasi Jaringan</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 66%"></div>
+                          <div class="skill-percent">66%</div>
+                        </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>Sistem Operasi Komputer</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 96%"></div>
+                          <div class="skill-percent">96%</div>
+                        </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>Pelaporan Pajak Badan Usaha, dll...</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 76%"></div>
+                          <div class="skill-percent">76%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="education padd-15">
+                    <h3 class="title">Pendidikan</h3>
+                    <div class="row">
+                      <div class="timeline-box padd-15">
+                        <div class="timeline shadow-dark">
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date"><i class="fa fa-calendar"></i> 1994 - 1998</h3>
+                            <h4 class="timeline-title">D3 Teknik Komputer</h4>
+                            <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum provident dolorem, ex rem laborum est, obcaecati officia sint aliquam exercitationem voluptates eum ipsam iusto.</p>
+                          </div>
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date"><i class="fa fa-calendar"></i> 1994 - 1998</h3>
+                            <h4 class="timeline-title">D3 Teknik Komputer</h4>
+                            <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum provident dolorem, ex rem laborum est, obcaecati officia sint aliquam exercitationem voluptates eum ipsam iusto.</p>
+                          </div>
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date"><i class="fa fa-calendar"></i> 1994 - 1998</h3>
+                            <h4 class="timeline-title">D3 Teknik Komputer</h4>
+                            <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum provident dolorem, ex rem laborum est, obcaecati officia sint aliquam exercitationem voluptates eum ipsam iusto.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="experience padd-15">
+                    <h3 class="title">Pengalaman</h3>
+                    <div class="row">
+                      <div class="timeline-box padd-15">
+                        <div class="timeline shadow-dark">
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date"><i class="fa fa-calendar"></i> 1998 - 2022</h3>
+                            <h4 class="timeline-title">Pranata Komputer Terampil</h4>
+                            <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum provident dolorem, ex rem laborum est, obcaecati officia sint aliquam exercitationem voluptates eum ipsam iusto.</p>
+                          </div>
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date"><i class="fa fa-calendar"></i> 1998 - 2022</h3>
+                            <h4 class="timeline-title">Pranata Komputer Terampil</h4>
+                            <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum provident dolorem, ex rem laborum est, obcaecati officia sint aliquam exercitationem voluptates eum ipsam iusto.</p>
+                          </div>
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date"><i class="fa fa-calendar"></i> 1998 - 2022</h3>
+                            <h4 class="timeline-title">Pranata Komputer Terampil</h4>
+                            <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum provident dolorem, ex rem laborum est, obcaecati officia sint aliquam exercitationem voluptates eum ipsam iusto.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4">
-            <p>Berpengalaman dalam mengelola sistem informasi dan mengoptimalkan infrastruktur IT. Berpengalaman dalam mengelola proyek berbasis komputer serta kreatif dan inovatif dalam mencari solusi di bidang komputer.</p>
+        </section>
+        <!-- Profil section end -->
+        <!-- Layanan section start -->
+        <section class="service section" id="services">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Layanan</h2>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Layanan item start -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-mobile-alt"></i>
+                  </div>
+                  <h4>Pranata Komputer Terampil</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil dolorum doloremque.</p>
+                </div>
+              </div>
+              <!-- Layanan item end -->
+              <!-- Layanan item start -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-laptop-code"></i>
+                  </div>
+                  <h4>Pranata Komputer Terampil</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil dolorum doloremque.</p>
+                </div>
+              </div>
+              <!-- Layanan item end -->
+              <!-- Layanan item start -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-palette"></i>
+                  </div>
+                  <h4>Pranata Komputer Terampil</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil dolorum doloremque.</p>
+                </div>
+              </div>
+              <!-- Layanan item end -->
+              <!-- Layanan item start -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-code"></i>
+                  </div>
+                  <h4>Pranata Komputer Terampil</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil dolorum doloremque.</p>
+                </div>
+              </div>
+              <!-- Layanan item end -->
+              <!-- Layanan item start -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <h4>Pranata Komputer Terampil</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil dolorum doloremque.</p>
+                </div>
+              </div>
+              <!-- Layanan item end -->
+              <!-- Layanan item start -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-bullhorn"></i>
+                  </div>
+                  <h4>Pranata Komputer Terampil</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil dolorum doloremque.</p>
+                </div>
+              </div>
+              <!-- Layanan item end -->
+            </div>
           </div>
-        </div>
+        </section>
+        <!-- Layanan section end -->
+        <!-- Bagasi section start -->
+        <section class="portfolio section" id="portfolio">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Bagasi</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="portfolio-heading padd-15">
+                <h2>Dokumentasi Gambar :</h2>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Bagasi item start -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/1.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- Bagasi item end -->
+              <!-- Bagasi item start -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/2.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- Bagasi item end -->
+              <!-- Bagasi item start -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/3.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- Bagasi item end -->
+              <!-- Bagasi item start -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/4.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- Bagasi item end -->
+              <!-- Bagasi item start -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/5.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- Bagasi item end -->
+              <!-- Bagasi item start -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/6.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- Bagasi item end -->
+            </div>
+          </div>
+        </section>
+        <!-- Bagasi section end -->
+        <!-- Kontak section start -->
+        <section class="contact section" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Hubungi Saya</h2>
+              </div>
+            </div>
+            <h3 class="contact-title padd-15">Untuk informasi yang lebih detil</h3>
+            <h4 class="contact-sub-title padd-15">SAYA SIAP MEMBANTU ANDA</h4>
+            <div class="row">
+              <!-- Kontak info item start -->
+              <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-phone"></i></div>
+                <h4>Hubungi saya</h4>
+                <p>+62 12021974</p>
+              </div>
+              <!-- Kontak info item end -->
+              <!-- Kontak info item start -->
+              <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                <h4>Kantor</h4>
+                <p>Kota Palembang</p>
+              </div>
+              <!-- Kontak info item end -->
+              <!-- Kontak info item start -->
+              <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-envelope"></i></div>
+                <h4>Email</h4>
+                <p>zmusthofa74@gmail.com</p>
+              </div>
+              <!-- Kontak info item end -->
+              <!-- Kontak info item start -->
+              <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-globe-asia"></i></div>
+                <h4>Website</h4>
+                <p>www.belumpunya.com</p>
+              </div>
+              <!-- Kontak info item end -->
+            </div>
+            <h3 class="contact-title padd-15">KIRIMKAN PESAN LEWAT EMAIL</h3>
+            <h4 class="contact-sub-title padd-15">SAYA AKAN DENGAN SEGERA MEMBALAS</h4>
+            <!-- Kontak Form -->
+            <div class="row">
+              <div class="contact-form padd-15">
+                <div class="row">
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Nama" />
+                    </div>
+                  </div>
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="email" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Judul" />
+                    </div>
+                  </div>
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <textarea name="" class="form-control" id="" placeholder="Pesan"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <button type="Submit" class="btn">Kirim Pesan</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Kontak section end -->
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#e2edff"
-          fill-opacity="1"
-          d="M0,192L48,192C96,192,192,192,288,186.7C384,181,480,171,576,165.3C672,160,768,160,864,176C960,192,1056,224,1152,229.3C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Profil -->
-
-    <!-- Lemari -->
-    <section id="lemari">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Lemari Saya</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center text-center">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/lemari/1.jpg" class="card-img-top" alt="Lemari1" />
-              <div class="card-body">
-                <p class="card-text">ini adalah contoh isi daripada lemari</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/lemari/2.jpg" class="card-img-top" alt="Lemari2" />
-              <div class="card-body">
-                <p class="card-text">ini adalah contoh isi daripada lemari</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/lemari/3.jpg" class="card-img-top" alt="Lemari3" />
-              <div class="card-body">
-                <p class="card-text">ini adalah contoh isi daripada lemari</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/lemari/4.jpg" class="card-img-top" alt="Lemari4" />
-              <div class="card-body">
-                <p class="card-text">ini adalah contoh isi daripada lemari</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/lemari/5.jpg" class="card-img-top" alt="Lemari5" />
-              <div class="card-body">
-                <p class="card-text">ini adalah contoh isi daripada lemari</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <!-- Main content end -->
+    </div>
+    <!-- Main container end -->
+    <!-- Style Switcher start -->
+    <div class="style-switcher">
+      <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,256L48,229.3C96,203,192,149,288,160C384,171,480,245,576,266.7C672,288,768,256,864,250.7C960,245,1056,267,1152,245.3C1248,224,1344,160,1392,128L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Lemari -->
-
-    <!-- Kontak -->
-    <section id="kontak">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Kontak Saya</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <form>
-              <div class="mb-3">
-                <label for="nama" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="nama" aria-describedby="nama" />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Alamat Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
-              </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="4"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
-            </form>
-          </div>
-        </div>
+      <div class="day-night s-icon">
+        <i class="fas"></i>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#0d6efd"
-          fill-opacity="1"
-          d="M0,224L48,229.3C96,235,192,245,288,218.7C384,192,480,128,576,122.7C672,117,768,171,864,202.7C960,235,1056,245,1152,224C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Kontak -->
-
-    <!-- Footer -->
-    <footer class="bg-primary text-white text-center pb-3">
-      <p>Catatan Pribadi <i class="bi bi-heart-fill text-danger"></i> <a href="https://www.instagram.com/zmusthofa74/" class="text-white fw-bold">Zainul Musthofa</a></p>
-    </footer>
-    <!-- Akhir Footer -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <h4>Warna Tema</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+      </div>
+    </div>
+    <!-- Style Switcher end -->
+    <!-- JS file -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script> -->
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
   </body>
 </html>
